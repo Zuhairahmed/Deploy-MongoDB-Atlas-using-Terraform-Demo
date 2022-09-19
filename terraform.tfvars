@@ -1,7 +1,9 @@
-atlas_org_id = "62f5326aebbd36313fe38c23"
+#atlas_org_id = "<UPDATE WITH YOUR ORG ID>"
 atlas_project_name = "myFirstProject"
 environment = "dev"
 cluster_instance_size_name = "M10"
-
-
-
+cloud_provider = "AWS"
+atlas_region = "US_WEST_2"
+mongodb_version = "6.0"
+#ip_address = "<UPDATE WITH YOUR IP>"
+aws_region = "us-west-2"
