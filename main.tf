@@ -21,6 +21,7 @@ resource "random_password" "db-user-password" {
   length = 16
   special = true
   override_special = "_%@"
+  sensitive = true
 }
 
 # Create Database IP Access List 
@@ -64,12 +65,10 @@ output "connection_string" { value = mongodbatlas_advanced_cluster.atlas-cluster
 output "ip_access_list"    { value = mongodbatlas_project_ip_access_list.ip.ip_address }
 output "project_name"      { value = mongodbatlas_project.atlas-project.name }
 output "username"          { value = mongodbatlas_database_user.db-user.username } 
-/*
 output "user_password"     { 
   sensitive = true
   value = mongodbatlas_database_user.db-user.password 
   }
-*/
 output "plstring" {
   value = lookup(mongodbatlas_advanced_cluster.atlas-cluster.connection_strings[0].aws_private_link_srv, aws_vpc_endpoint.ptfe_service.id)
 }
