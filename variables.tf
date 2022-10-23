@@ -1,12 +1,12 @@
 # Atlas Organization ID 
 variable "atlas_org_id" {
   type        = string
-  description = "Atlas organization id"
+  description = "Atlas Organization ID"
 }
 # Atlas Project Name
 variable "atlas_project_name" {
   type        = string
-  description = "Atlas project name"
+  description = "Atlas Project Name"
 }
 
 # Atlas Project Environment
@@ -30,7 +30,7 @@ variable "cloud_provider" {
 # Atlas Region
 variable "atlas_region" {
   type        = string
-  description = "AWS region where resources will be created"
+  description = "Atlas region where resources will be created"
 }
 
 # MongoDB Version 
@@ -39,10 +39,10 @@ variable "mongodb_version" {
   description = "MongoDB Version"
 }
 
-# IP Adress Access
+# IP Address Access
 variable "ip_address" {
   type = string
-  description = "IP address that will be used to access Atlas cluster"
+  description = "IP address used to access Atlas cluster"
 }
 
 # AWS Region
